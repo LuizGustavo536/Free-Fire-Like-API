@@ -86,7 +86,7 @@ async def send_multiple_requests(uid, server_name, url):
         if tokens is None:
             app.logger.error("Failed to load tokens.")
             return None
-        for i in range(100):
+        for i in range(220):
             token = tokens[i % len(tokens)]["token"]
             tasks.append(send_request(encrypted_uid, token, url))
         results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -158,7 +158,7 @@ def decode_protobuf(binary):
 @app.route('/', methods=['GET'])
 def index():
     return jsonify({
-        "credit": "https://t.me/paglu_dev",
+        "credit": "https://t.me/LuizvendasFF",
         "message": "Welcome to the Free Fire Like API",
         "status": "API is running",
         "endpoints": "/like?uid=<uid> or /like?uid=<uid>&server_name=<server_name>",
@@ -232,7 +232,7 @@ def handle_requests():
         like_given = after_like - before_like
         
         return jsonify({
-            "credit": "https://t.me/paglu_dev",
+            "credit": "https://t.me/LuizvendasFF",
             "LikesGivenByAPI": like_given,
             "LikesafterCommand": after_like,
             "LikesbeforeCommand": before_like,
