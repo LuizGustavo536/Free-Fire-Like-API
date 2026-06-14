@@ -1,4 +1,3 @@
-update_tokens.py
 import requests
 import json
 import time
