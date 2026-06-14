@@ -69,4 +69,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-Update API Endpoint and Response Handling in Python Script - Manus
