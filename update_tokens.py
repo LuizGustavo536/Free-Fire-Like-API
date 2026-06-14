@@ -3,7 +3,7 @@ import json
 
 UIDPASS_FILE = "uidpass.json"
 TOKEN_FILE = "tokens.json"
-API_URL = "ff-jwt-api-nu.vercel.app"
+API_URL = "likes-2.vercel.app"
 
 def read_uidpass():
     with open(UIDPASS_FILE, "r", encoding="utf-8") as f:
